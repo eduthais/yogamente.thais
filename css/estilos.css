@@ -1,0 +1,85 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(223, 178, 211);
+    width: 70% auto;
+}
+h1{
+    font-size: xx-large;
+}
+.colormorado{
+    background-color: rgb(146, 71, 130);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tata{
+    background-color: rgb(146, 71, 130);
+}
+.padre{
+    border: none;
+    margin: 20px;
+    padding: 10px;
+    height: 640px;
+    box-sizing:border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "hijo1 centro1 hijo2"
+    "hijo3 centro2 hijo4";
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items:stretch
+}
+.hijo1, .hijo2, .hijo3, .hijo4{
+    background-color: rgb(146, 71, 130);
+    border: 1px rgb(93, 71, 114);
+}
+.hijo1{
+    grid-area: hijo1;
+}
+.hijo2{
+    grid-area: hijo2;
+}
+.hijo3{
+    grid-area: hijo3;
+}
+.hijo4{
+    grid-area: hijo4;
+}
+.centro1{
+    grid-area: centro1;
+}
+.centro2{
+    grid-area: centro2;
+}
+.centro1, .centro2{
+    background-color: rgb(168, 112, 156);
+}
+.scale:hover{
+    transform: scale(1.03, 1.03);
+}
+.madre{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "estilo1 estilo2 estilo3";
+    justify-items: center;
+    text-align: center;
+}
+.estilo1{
+    grid-area: estilo1;
+}
+.estilo2{
+    grid-area: estilo2;
+}
+.estilo2{
+    grid-area: estilo3;
+}
+.accordion-flush{
+    margin: 20px;
+    padding: 10px;
+}
