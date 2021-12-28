@@ -83,3 +83,92 @@ h1{
     margin: 20px;
     padding: 10px;
 }
+@media only screen and {max-width: 375px;
+    h1{
+        font-size: 0.8rem;
+    }
+    h2{
+        font-size: 0.6rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.2rem;
+    }
+    .padre{
+        width: 95%;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid rgb(93, 71, 114);
+        height: 1200px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 2fr);
+        grid-template-areas:
+        "hijo1"
+        "hijo3"
+        "centro1"
+        "centro2"
+        "hijo2"
+        "hijo4";
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .hijo1{
+        grid-area: hijo1;
+    }
+    .hijo2{
+        grid-area: hijo2;
+    }
+    .hijo3{
+        grid-area: hijo3;
+    }
+    .hijo4{
+        grid-area: hijo4;
+    }
+    .centro1{
+        grid-area: centro1;
+    }
+    .centro2{
+        grid-area: centro2;
+    }
+    img{
+        width: 150px
+    }
+    .hijo{
+        width: 150px;
+    }
+    .centro{
+        width: 150px;
+    }
+    .madre{
+        width: 80%;
+        border: 1px solid rgb(93, 71, 114);
+        height: 2600px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 2fr);
+        grid-template-areas: 
+        "estilo1"
+        "estilo2"
+        "estilo3";
+        column-gap: 10px;
+        row-gap: 10px;
+        float: inline-start;
+    }
+    .estilo1{
+        grid-area: estilo1;
+    }
+    .estilo2{
+        grid-area: estilo2;
+    }
+    .estilo3{
+        grid-area: estilo3;
+    }
+    iframe{
+        width: 120px;
+    }
+}
